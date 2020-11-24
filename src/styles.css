@@ -1,0 +1,102 @@
+/*formateo*/
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+/*
+$color-primary: #5B35AD;
+$color-secondary: #8B190E;
+$color-tertiary: #163A7E;
+$color-quaternary: #019FF4;
+$color-white: white;
+$color-red: #db1002;
+$color-tutor: #6B45D8;  */
+
+
+
+/*
+%fullSpace {
+    width: 100%;
+    height: 100%;
+}  */
+
+:root {
+    box-sizing: inherit; 
+    --color-primary: #5B35AD;
+    --color-tutor: #6B45D8;
+    --ruda-font: 'Ruda', sans-serif;
+    --kronaOne-font: 'Krona One', sans-serif;
+}
+  
+  body {
+    box-sizing: border-box;
+    background-color: #5B35AD; }
+  
+  a {
+    text-decoration: none; }
+  
+  li {
+    list-style: none; }
+
+ /*
+$color-background: #2E1D52;
+$color-primary: #5E38B1;
+$color-secundary: #874AD8;
+$color-btn1: #8DEEE8;
+$color-btn2: #51CB91;
+$color-red: #C95454; */
+
+
+.checkbox {
+  display: none;
+}
+.checkbox:checked ~ .switch:before{
+  transform: translateX(0);
+}
+.switch {
+  /* border: 1px solid red; */
+  margin-right: 10px;
+  height: 40px;
+  display: block;
+  border-radius: 20px;
+  background: #5f616d;
+  width: 80px;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+}
+.switch::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  transform: translateX(40px);
+  transition: .3s;
+  will-change: transform;
+}
