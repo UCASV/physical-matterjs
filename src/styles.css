@@ -78,11 +78,12 @@ $color-red: #C95454; */
 }
 .switch {
   /* border: 1px solid red; */
+  margin-left:10px;
   margin-right: 10px;
   height: 40px;
   display: block;
   border-radius: 20px;
-  background: #5f616d;
+  background: rgba(10, 8, 31, 0.8);
   width: 80px;
   padding: 5px;
   box-sizing: border-box;
@@ -100,3 +101,52 @@ $color-red: #C95454; */
   transition: .3s;
   will-change: transform;
 }
+
+
+.container {
+  display: flex;
+}
+
+.Timers {
+  display: flex;
+}
+
+.Countdown {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 4px;
+  padding: 5px;
+  width: 130px;
+  background-color: #5b35ad;
+  display: flex;
+  align-items:center;
+}
+
+.Countdown-time {
+  font-size: 16px;
+}
+
+.Countdown-display button {
+  margin: 0 15px;
+  border: solid 1px transparent;
+  border-radius: 2px;
+  padding: 4px 16px;
+  color: #ffffff;
+
+  font-size: 16px;
+}
+
+button {
+  background-color: rgba(10, 8, 31, 0.8);
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  font-family:"Krona One", sans-serif;
+  margin-right: 10px;
+}
+
+
+
